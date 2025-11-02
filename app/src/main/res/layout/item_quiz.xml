@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dp20">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutButton"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llQuizHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_layout_header" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/white"
+                app:strokeWidth="@dimen/dp0">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp80"
+                    android:backgroundTint="@color/white"
+                    android:paddingTop="@dimen/dp80" />
+
+                <RelativeLayout
+                    android:id="@+id/llQuestionPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp30"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/flTimer"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp">
+
+                        <ProgressBar
+                            android:id="@+id/progressCircular"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/dp100"
+                            android:layout_height="@dimen/dp100"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:max="60"
+                            android:progress="60"
+                            android:progressDrawable="@drawable/circular_progress" />
+
+                        <TextView
+                            android:id="@+id/tvTimer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/green_198754"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp90"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="01"
+                        android:textSize="@dimen/sp14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dp90"
+                        android:layout_marginEnd="@dimen/dp20"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="01/15"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flTimer"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="@dimen/dp20"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:text="In what year did the United States\nhost the FIFA World Cup for the first\ntime?"
+                            android:textSize="@dimen/sp16" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp28"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rgOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbOption1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|start"
+                        android:padding="12dp"
+                        android:text="1986"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp10" />
+
+                    <RadioButton
+                        android:id="@+id/rbOption2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|start"
+                        android:padding="12dp"
+                        android:text="1994"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp10" />
+
+                    <RadioButton
+                        android:id="@+id/rbOption3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|start"
+                        android:padding="12dp"
+                        android:text="2002"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp10" />
+
+                    <RadioButton
+                        android:id="@+id/rbOption4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical|start"
+                        android:padding="12dp"
+                        android:text="2010"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/gray_6C7278"
+            android:text="Previous" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green_198754"
+            android:text="Next"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp15"
+    tools:context=".login.activity.OtpVerificationActivity">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp55"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_applogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:layout_marginTop="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/tvEnterOTPCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/enter_the_code_sent_to_your_mobile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/tvVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEnterOTPCode"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/verify_with_code_sent_to"
+            android:textColor="@color/gray_6C7278"
+            android:textSize="@dimen/sp14" />
+
+        <TextView
+            android:id="@+id/tvMobileNoxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEnterOTPCode"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_toEndOf="@+id/tvVerify"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center_horizontal"
+            android:text="+91 XXXXXX1234"
+            android:textColor="@color/gray_6C7278"
+            android:textSize="@dimen/sp14"
+            app:drawableEndCompat="@drawable/ic_edit" />
+
+
+        <LinearLayout
+            android:id="@+id/llPinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvVerify"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp24">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:cursorVisible="true"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_horizontal"
+                android:hint="000000"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/black_4C4C4C"
+                android:textColorHint="@color/gray_BDBDBD"
+                android:textSize="@dimen/sp20"
+                app:itemCount="6"
+                app:itemHeight="@dimen/dp50"
+                app:itemRadius="@dimen/dp7"
+                app:itemSpacing="@dimen/dp8"
+                app:itemWidth="@dimen/dp48"
+                app:lineColor="@color/gray_EDF1F3"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvOtpError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:fontFamily="@font/inter_regular"
+                android:text="Enter a valid code"
+                android:textColor="@color/red_EC0000"
+                android:textSize="@dimen/sp12"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerify"
+            android:layout_width="@dimen/dp337"
+            android:layout_height="@dimen/dp54"
+            android:layout_below="@+id/llPinview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp30"
+            android:backgroundTint="@color/green_8CC3AA"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/verify"
+            android:textSize="@dimen/sp16" />
+
+        <LinearLayout
+            android:id="@+id/llOtpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnVerify"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp109"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Don’t receive the OTP?"
+                android:textColor="@color/black_0E1C0F"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingHorizontal="@dimen/dp4"
+                android:paddingVertical="@dimen/dp4"
+                android:text="28s"
+                android:textColor="@color/green_198754"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingHorizontal="@dimen/dp4"
+                android:paddingVertical="@dimen/dp4"
+                android:text="Resend"
+                android:textColor="@color/green_198754"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

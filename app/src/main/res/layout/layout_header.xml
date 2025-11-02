@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <!--    Layout Header-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_198754">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:src="@drawable/ic_india" />
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp7"
+            android:layout_toEndOf="@+id/ivUserImage"
+            android:fontFamily="@font/inter_regular"
+            android:text="Hello"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHello"
+            android:layout_marginStart="@dimen/dp7"
+            android:layout_toEndOf="@+id/ivUserImage"
+            android:fontFamily="@font/inter_bold"
+            android:text="Hritikesh Singh"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_notifications" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_toStartOf="@id/ivNotification"
+            android:src="@drawable/ic_searching" />
+
+
+    </RelativeLayout>
+
+    <!--    layout services-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp26">
+
+        <TextView
+            android:id="@+id/tvServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Services"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvServices"
+            android:layout_marginTop="@dimen/dp14"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llOnlineProgram"
+                android:layout_width="@dimen/dp164"
+                android:layout_height="@dimen/dp150"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg"
+                android:backgroundTint="@color/lightGreen_E9FFF5"
+                android:orientation="vertical"
+                android:padding="@dimen/dp12">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Online Program"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Upgrade Your Skills \nOnline"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_offline_programing" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/llOfflineProgram"
+                android:layout_width="@dimen/dp164"
+                android:layout_height="@dimen/dp150"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_bg"
+                android:backgroundTint="@color/lightYellow_FFFBF0"
+                android:orientation="vertical"
+                android:padding="@dimen/dp12">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Offline Program"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Advance Skills in Classroom"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_online_programing" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--   Preferred Colleges -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPreferredColleges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Preferred Colleges"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tvSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center|end"
+            android:text="See All"
+            android:textColor="@color/green_198754"
+            android:textSize="@dimen/sp16" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrefColleges"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:visibility="gone"
+        tools:listitem="@layout/item_college" />
+
+    <RelativeLayout
+        android:id="@+id/rvAiGuidance"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:backgroundTint="@color/green_198754"
+        android:paddingStart="@dimen/dp10"
+        android:paddingTop="@dimen/dp10"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvAiGuidance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Enhance Your Speaking Skills\nwith AI Guidance"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAiGuidance"
+            android:fontFamily="@font/inter_regular"
+            android:text="Practice real conversations, improve\nfluency, and get instant AI feedback."
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFeedback"
+            android:layout_marginTop="@dimen/dp20"
+            android:backgroundTint="@color/gray_6C7278"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Start Speaking" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tvPsychometricTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            tools:listitem="@layout/item_test" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llToadyQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Today's Quiz" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_today_quiz" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

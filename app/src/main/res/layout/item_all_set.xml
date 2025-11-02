@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/blurOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0FFFFFF"
+        android:visibility="visible" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/transparent"
+        app:strokeWidth="@dimen/dp0">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp80"
+            android:backgroundTint="@color/white"
+            android:paddingTop="@dimen/dp80" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_all_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="All Set!"
+                android:textSize="@dimen/sp20"
+                android:textStyle="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp8"
+                android:fontFamily="@font/inter_medium"
+                android:text="Your application has been\nsubmitted successfully"
+                android:textSize="@dimen/sp16"
+                android:textStyle="" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOkay"
+                android:layout_width="@dimen/dp337"
+                android:layout_height="@dimen/dp54"
+                android:layout_marginHorizontal="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp60"
+                android:layout_marginBottom="45dp"
+                android:backgroundTint="@color/green_198754"
+                android:fontFamily="@font/inter_semibold"
+                android:text="@string/okay"
+                android:textSize="@dimen/sp16" />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

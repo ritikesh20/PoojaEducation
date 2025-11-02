@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.activity.CompleteProfileStep2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header_with_steps-->
+        <LinearLayout
+            android:id="@+id/llHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llHeaderStep2"
+                layout="@layout/header_with_steps" />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llHeader2"
+            android:paddingHorizontal="@dimen/dp15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--llClass10thBoard-->
+                <LinearLayout
+                    android:id="@+id/llClass10thBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvClass10thBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Class 10th Board*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etClass10thBoard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Class 10th Board"
+                        android:inputType="textCapWords|textPersonName"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <!--llClass10thMark-->
+                <LinearLayout
+                    android:id="@+id/llClass10thMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvClass10thMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Class 10th Mark*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etClass10thMark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Class 10th Mark"
+                        android:inputType="textCapWords|textPersonName"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <!--Year of passing 10th-->
+                <LinearLayout
+                    android:id="@+id/llYearOfPassing10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvYearOfPassing10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Year of passing*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etYearOfPassing10"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Year of passing"
+                        android:inputType="number"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <!--llClass10thBoard-->
+                <LinearLayout
+                    android:id="@+id/llClass12thBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvClass12thBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Class 12th Board*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etClass12thBoard"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Class 12th Board"
+                        android:inputType="textCapWords|textPersonName"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llStream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Stream*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etStream"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Stream"
+                        android:inputType="textCapWords|textPersonName"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+
+                <!--llClass10thMark-->
+                <LinearLayout
+                    android:id="@+id/llClass12thMark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvClass12thMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Class 12th Mark*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etClass12thMark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Class 12th Mark"
+                        android:inputType="textCapWords|textPersonName"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+
+                <!--llYearOfPassing12th-->
+                <LinearLayout
+                    android:id="@+id/llYearOfPassing12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvYearOfPassing12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:singleLine="true"
+                        android:text="Year of passing*"
+                        android:textColor="@color/gray_777777"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etYearOfPassing12"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:fontFamily="@font/inter_regular"
+                        android:gravity="start|center_vertical"
+                        android:hint="Year of passing"
+                        android:inputType="number"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_6C7278"
+                        android:textSize="@dimen/sp16" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCompletedProfileStep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp54"
+                    android:layout_marginTop="@dimen/dp44"
+                    android:backgroundTint="@color/green_8CC3AA"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="@string/next"
+                    android:textSize="@dimen/sp16" />
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

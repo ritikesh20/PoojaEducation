@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Guide My Career by Pooja Education</string>
+
+    <string name="tittleTvOnBoardingOne">Choose the right college, or  course — with guidance</string>
+    <string name="desTvOnBoardingOne">Discover the College and Course That Suits You Best</string>
+
+    <string name="tittleTvOnBoardingTwo">Choose the right college, or  course — with guidance</string>
+    <string name="desTvOnBoardingTwo">Discover the College and Course That Suits You Best</string>
+
+    <string name="tittleTvOnBoardingThree">Take the First Step Today for a Brighter Future.</string>
+    <string name="desTvOnBoardingThree">A brighter tomorrow begins with the step you take today.</string>
+
+
+    <string name="next">Next</string>
+    <string name="continuee">Continue</string>
+    <string name="mobile_number">Enter your Mobile \nNumber</string>
+    <string name="mobile_number_login">Enter your mobile number for login</string>
+    <string name="college">College</string>
+    <string name="student">Student</string>
+    <string name="login">Login</string>
+    <string name="enter_the_code_sent_to_your_mobile">Enter the Code \nSent to Your Mobile</string>
+    <string name="verify_with_code_sent_to">Verify with code sent to</string>
+    <string name="verify">Verify</string>
+    <string name="use_mobile">Use Mobile</string>
+    <string name="email">Email</string>
+    <string name="enter_a_valid_mobile_number">Enter a valid mobile number</string>
+    <string name="enter_a_valid_email_address">Enter a valid email address</string>
+    <string name="use_email">Use Email</string>
+
+    <string name="EnterYourEmailAddress">Enter Your Email \nAddress</string>
+    <string name="EnterYourEmailAddressForLogin">Enter Your Email Address For Login</string>
+    <string name="complete_your_profile">Complete your profile</string>
+    <string name="user_name">User Name</string>
+    <string name="full_name">Full Name*</string>
+    <string name="select">Select</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+    <string name="date_of_birth">Date of Birth*</string>
+    <string name="downarrow">DownArrow</string>
+    <string name="collegeIcon">collegeIcon</string>
+    <string name="email_address">Email Address</string>
+
+    <string name="educationalBackground">Educational Background</string>
+    <string name="personalDetails">Personal Details</string>
+    <string name="entranceExamInformation">Entrance Exam Information</string>
+    <string name="Skills_Interests">Skills &amp; Interests</string>
+    <string name="locationPreferences">Location Preferences</string>
+
+
+    <string name="step1">Step 1/5 </string>
+    <string name="step2">Step 2/5 </string>
+    <string name="step3">Step 3/5 </string>
+    <string name="step4">Step 4/5 </string>
+    <string name="step5">Step 5/5 </string>
+    <string name="personal_details">Personal Details</string>
+    <string name="step_1_5">Step 1/5</string>
+    <string name="rank">Rank</string>
+    <string name="score">Score</string>
+    <string name="year_of_examination">Year of Examination*</string>
+    <string name="academic_interests">Academic Interests</string>
+    <string name="other_skills">Other Skills</string>
+    <string name="preferred_states">Preferred States</string>
+    <string name="city">City</string>
+    <string name="okay">Okay</string>
+
+
+</resources>

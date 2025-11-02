@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.activity.CompleteProfileStep5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        header_with_steps-->
+        <LinearLayout
+            android:id="@+id/llHeader3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llHeaderStep3"
+                layout="@layout/header_with_steps" />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llHeader3"
+            android:paddingHorizontal="@dimen/dp15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPreferredStates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/preferred_states"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_777777"
+                    android:textColorHint="@color/gray_777777"
+                    android:textSize="@dimen/sp16" />
+
+                <RelativeLayout
+                    android:id="@+id/rlAcademicInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:background="@drawable/edit_text_bg">
+
+                    <TextView
+                        android:id="@+id/tvSelectPreferredStates"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/dp10"
+                        android:layout_toStartOf="@id/ivAcademicInterestsDropDown"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/select"
+                        android:singleLine="true"
+                        android:textColor="@color/black_4C4C4C"
+                        android:textColorHint="@color/gray_777777"
+                        android:textSize="@dimen/sp16" />
+
+                    <ImageView
+                        android:id="@+id/ivAcademicInterestsDropDown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/dp10"
+                        android:src="@drawable/ic_downarrow" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="start|center_vertical"
+                    android:singleLine="true"
+                    android:text="City*"
+                    android:textColor="@color/gray_777777"
+                    android:textColorHint="@color/gray_6C7278"
+                    android:textSize="@dimen/sp14" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp46"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:background="@drawable/edit_text_bg"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/city"
+                    android:inputType="textCapWords|textPersonName"
+                    android:maxLength="30"
+                    android:paddingHorizontal="@dimen/dp10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_6C7278"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompletedProfileStep4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp54"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp15"
+            android:layout_marginBottom="45dp"
+            android:backgroundTint="@color/green_8CC3AA"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/next"
+            android:textSize="@dimen/sp16" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

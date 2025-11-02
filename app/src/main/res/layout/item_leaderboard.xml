@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_layout_header" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_198754"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp20">
+
+        <LinearLayout
+            android:id="@+id/llRank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfileRank2"
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
+                android:padding="@dimen/dp2"
+                android:src="@drawable/ic_online_programing"
+                app:shapeAppearance="@style/CircleImageStyle"
+                app:strokeColor="@color/lightGreen_E9FFF5"
+                app:strokeWidth="@dimen/dp2" />
+
+            <TextView
+                android:id="@+id/tvRank2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Meghan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tvRank2Pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="40 pts"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRank1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfileRank1"
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
+                android:padding="@dimen/dp2"
+                android:src="@drawable/ic_online_programing"
+                app:shapeAppearance="@style/CircleImageStyle"
+                app:strokeColor="@color/lightGreen_E9FFF5"
+                app:strokeWidth="@dimen/dp2" />
+
+            <TextView
+                android:id="@+id/tvRank1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Meghan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tvRank1Pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="40 pts"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRank3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfileRank3"
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
+                android:padding="@dimen/dp2"
+                android:src="@drawable/ic_online_programing"
+                app:shapeAppearance="@style/CircleImageStyle"
+                app:strokeColor="@color/lightGreen_E9FFF5"
+                app:strokeWidth="@dimen/dp2" />
+
+            <TextView
+                android:id="@+id/tvRank3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="Meghan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tvRank3Pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="40 pts"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_leader_board" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

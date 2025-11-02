@@ -1,0 +1,11 @@
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/lightGreen_E9FFF5" />      <!-- background color badal sakte hain -->
+    <corners android:radius="6dp" />         <!-- 4 corners rounded, 6dp -->
+    <padding
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp" />
+</shape>

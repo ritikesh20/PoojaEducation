@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp10"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:padding="@dimen/dp12">
+
+        <ImageView
+            android:id="@+id/tvTestImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_online_programing" />
+
+        <TextView
+            android:id="@+id/tvTestName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_toEndOf="@+id/tvTestImage"
+            android:fontFamily="@font/inter_semibold"
+            android:text="General Knowledge Quiz"
+            android:textSize="@dimen/sp16" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTestName"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toEndOf="@+id/tvTestImage"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp10">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="@dimen/dp5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_online_programing"
+                    app:shapeAppearanceOverlay="@style/CircleImageStyle"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_online_programing"
+                    app:shapeAppearanceOverlay="@style/CircleImageStyle"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="40dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_online_programing"
+                    app:shapeAppearanceOverlay="@style/CircleImageStyle"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="60dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_online_programing"
+                    app:shapeAppearanceOverlay="@style/CircleImageStyle"
+                    app:strokeColor="@android:color/black"
+                    app:strokeWidth="2dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="+4k"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTestName"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/white"
+            android:text="Play Know"
+            android:textColor="@color/green_198754"
+            app:strokeColor="@color/green_198754"
+            app:strokeWidth="@dimen/dp2" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp8"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp34"
+        android:background="@drawable/edit_text_bg"
+        android:paddingHorizontal="@dimen/dp12"
+        android:paddingVertical="@dimen/dp8">
+
+        <TextView
+            android:id="@+id/tvFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="State"
+            android:textColor="@color/black_4C4C4C"
+            android:textSize="@dimen/sp14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_toEndOf="@+id/tvFilter"
+            android:src="@drawable/ic_downarrow" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

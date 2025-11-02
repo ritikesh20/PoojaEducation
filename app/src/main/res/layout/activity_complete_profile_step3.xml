@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.activity.CompleteProfileStep3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header -->
+        <LinearLayout
+            android:id="@+id/llHeader3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llHeaderStep3"
+                layout="@layout/header_with_steps" />
+
+        </LinearLayout>
+
+        <!-- SCROLL CONTENT -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llHeader3"
+            android:layout_above="@+id/btnCompletedProfileStep3"
+            android:paddingHorizontal="@dimen/dp15">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Exam Name -->
+                <LinearLayout
+                    android:id="@+id/llExamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvExamName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Class 10th Board*"
+                        android:textColor="@color/gray_777777"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etExamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <!-- Rank -->
+                <LinearLayout
+                    android:id="@+id/llRank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Rank*"
+                        android:textColor="@color/gray_777777"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etRank"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <!-- Score -->
+                <LinearLayout
+                    android:id="@+id/llScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Score*"
+                        android:textColor="@color/gray_777777"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <!-- Year -->
+                <LinearLayout
+                    android:id="@+id/llYearOfExamination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvYearOfExamination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/year_of_examination"
+                        android:textColor="@color/gray_777777"
+                        android:textSize="@dimen/sp14" />
+
+                    <EditText
+                        android:id="@+id/etYearOfExamination"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp46"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:background="@drawable/edit_text_bg"
+                        android:paddingHorizontal="@dimen/dp10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp16" />
+                </LinearLayout>
+
+                <!-- Add More -->
+                <LinearLayout
+                    android:id="@+id/llAddMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/tvAddMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="  Add More"
+                    android:textColor="@color/green_198754"
+                    android:textSize="@dimen/sp16"
+                    />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompletedProfileStep3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp54"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dp15"
+            android:layout_marginBottom="45dp"
+            android:backgroundTint="@color/green_198754"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/next"
+            android:textSize="@dimen/sp16" />
+
+    </RelativeLayout>
+
+</LinearLayout>

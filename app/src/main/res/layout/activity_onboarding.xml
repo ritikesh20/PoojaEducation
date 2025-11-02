@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.activity.OnboardingActivity">
+
+    <!--    llOnBoardingScreen1-->
+    <LinearLayout
+        android:id="@+id/llOnBoardingScreen1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_onboardingScreenImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/onboaringone" />
+
+        <TextView
+            android:id="@+id/tvTittleOnboardingOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp44"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp28"
+            android:text="@string/tittleTvOnBoardingOne"
+            android:textSize="@dimen/sp22" />
+
+        <TextView
+            android:id="@+id/tvDescriptionOnboardingOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp28"
+            android:text="@string/desTvOnBoardingOne"
+            android:textSize="@dimen/sp16" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp54"
+            android:layout_marginHorizontal="@dimen/dp28"
+            android:layout_marginTop="@dimen/dp65"
+            android:backgroundTint="@color/green_198754"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

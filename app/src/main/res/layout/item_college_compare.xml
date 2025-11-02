@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/layoutHeaderCollegeCompare"
+            layout="@layout/item_layout_header" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp12"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llMyCollege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivMyCollege"
+                        android:layout_width="@dimen/dp163"
+                        android:layout_height="@dimen/dp114"
+                        android:src="@drawable/ic_online_programing" />
+
+                    <TextView
+                        android:id="@+id/tvMyCollegeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="Amity University"
+                        android:textColor="@color/black_0E1C0F"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/tvMyCollegeLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Patna, Bihar"
+                        android:textSize="@dimen/sp10" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llOtherCollege"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivOtherCollege"
+                        android:layout_width="@dimen/dp163"
+                        android:layout_height="@dimen/dp114"
+                        android:src="@drawable/ic_online_programing" />
+
+                    <TextView
+                        android:id="@+id/tvOtherCollegeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="G N Singh University"
+                        android:textColor="@color/black_0E1C0F"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/tvOtherCollegeLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Jamuhar, Bihar"
+                        android:textSize="@dimen/sp10" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp34"
+                android:background="@color/gray_F4F4F491"
+                android:gravity="center"
+                android:text="Placement Support"
+                android:visibility="gone" />
+            <!--        llPlacementSupport-->
+            <LinearLayout
+                android:id="@+id/llPlacementSupport"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvMyCollegePlacementSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegePlacementSupport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:gravity="center"
+                android:text="Scholarship Availability"
+                android:visibility="gone" />
+
+            <!--        llScholarshipAvailability-->
+
+            <LinearLayout
+                android:id="@+id/llScholarshipAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeScholarshipAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegeScholarshipAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvApprovals"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:gravity="center"
+                android:text="Approvals"
+                android:visibility="gone" />
+
+            <!--        llApprovals-->
+
+            <LinearLayout
+                android:id="@+id/llApprovals"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeApprovals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegeApprovals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNAACScore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="NAAC Score" />
+
+            <!--        llApprovals-->
+
+            <LinearLayout
+                android:id="@+id/llNAACGrade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeNAACScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="3.45" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegeNAACGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="4.56" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNAACGrade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="NAAC Grade" />
+
+            <!--        llNAACGrade-->
+
+            <LinearLayout
+
+                android:id="@+id/llNAACScore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeNAACGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="NAAC A+" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegeNAACScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="NAAC A+" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvE_LearningFacility"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="E-Learning Facility" />
+            <!--        llNAACGrade-->
+            <LinearLayout
+
+                android:id="@+id/llE_LearningFacility"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeE_LearningFacility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherCollegeE_LearningFacility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNIRFRanking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@color/gray_F4F4F491"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="NIRF Ranking" />
+            <!--        llNAACGrade-->
+            <LinearLayout
+
+                android:id="@+id/llNIRFRanking"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMyCollegeNIRFRanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp2"
+                    android:layout_height="@dimen/dp45"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvOtherNIRFRanking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Yes" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
