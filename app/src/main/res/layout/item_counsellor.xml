@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rvCounsellor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp96"
+        android:padding="@dimen/dp8">
+
+        <ImageView
+            android:id="@+id/ivCounsellor"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/edit_text_bg"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_online_programing" />
+
+        <TextView
+            android:id="@+id/tvCounsellorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_toEndOf="@id/ivCounsellor"
+            android:fontFamily="@font/inter_semibold"
+            android:maxLength="30"
+            android:text="Hritikesh Singh"
+            android:textSize="@dimen/sp18" />
+
+
+        <ImageView
+            android:id="@+id/ivCounsellorRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/dp8"
+            android:layout_toStartOf="@+id/tvCounsellorRating"
+            android:src="@drawable/ic_rating" />
+
+
+        <TextView
+            android:id="@+id/tvCounsellorRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:fontFamily="@font/inter_semibold"
+            android:maxLength="30"
+            android:text="4.8"
+            android:textSize="@dimen/sp12" />
+
+
+        <TextView
+            android:id="@+id/tvCounsellorType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCounsellorName"
+            android:layout_marginStart="@dimen/dp8"
+            android:layout_toEndOf="@id/ivCounsellor"
+            android:fontFamily="@font/inter_medium"
+            android:maxLength="30"
+            android:text="Education Counsellor"
+            android:textSize="@dimen/sp14" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBookCounsellor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Book Now"
+            android:textColor="@color/green_198754"
+            app:backgroundTint="@color/white"
+            app:strokeColor="@color/green_198754"
+            app:strokeWidth="@dimen/dp1" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

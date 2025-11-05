@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llCounsellorHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dp20">
+
+        <include layout="@layout/item_layout_header" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llCounsellorHeader"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp20">
+
+        <RelativeLayout
+            android:id="@+id/rvCounsellor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp96"
+            android:padding="@dimen/dp8">
+
+            <ImageView
+                android:id="@+id/ivCounsellor"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/edit_text_bg"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_online_programing" />
+
+            <TextView
+                android:id="@+id/tvCounsellorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_toEndOf="@id/ivCounsellor"
+                android:fontFamily="@font/inter_semibold"
+                android:maxLength="30"
+                android:text="Hritikesh Singh"
+                android:textSize="@dimen/sp18" />
+
+
+            <ImageView
+                android:id="@+id/ivCounsellorRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/dp8"
+                android:layout_toStartOf="@+id/tvCounsellorRating"
+                android:src="@drawable/ic_rating" />
+
+
+            <TextView
+                android:id="@+id/tvCounsellorRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:fontFamily="@font/inter_semibold"
+                android:maxLength="30"
+                android:text="4.8"
+                android:textSize="@dimen/sp12" />
+
+
+            <TextView
+                android:id="@+id/tvCounsellorType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCounsellorName"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_toEndOf="@id/ivCounsellor"
+                android:fontFamily="@font/inter_medium"
+                android:maxLength="30"
+                android:text="Education Counsellor"
+                android:textSize="@dimen/sp14" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvAboutCounsellor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="About"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/tvAboutCounsellorDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:fontFamily="@font/inter_medium"
+            android:text="Perfectly crafted free system prompt or custom instructions for ChatGPT, Gemini, and Claude chatbots and models. Generate a creative story that is exactly 200 words long. The story must include intriguing characters, a compelling plot, and be set in a fictional world."
+            android:textSize="@dimen/sp14" />
+
+        <LinearLayout
+            android:id="@+id/llReviewWriteAreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:text="Reviews"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/tvWriteAReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="end"
+                android:text="Write A Reviews"
+                android:textColor="@color/green_198754"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llBookASession"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBookASession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp20"
+            android:backgroundTint="@color/green_198754"
+            android:paddingVertical="@dimen/dp5"
+            android:text="Book a Session" />
+
+    </LinearLayout>
+</RelativeLayout>
